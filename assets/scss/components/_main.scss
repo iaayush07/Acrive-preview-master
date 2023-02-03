@@ -1,0 +1,123 @@
+main {
+    background-image: url("../../../assets/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// detail-wrapper-start
+.detail-wrapper {
+    padding: 50px 300px 350px 200px;
+
+    @media (max-width:1440px) {
+        padding: 50px 200px 200px 150px;
+    }
+
+    @media (max-width:1024px) {
+        padding: 50px 50px 200px 150px;
+    }
+
+    @media (max-width:768px) {
+        padding: 50px 50px 200px 20px;
+    }
+
+    @media (max-width:425px) {
+        padding: 20px;
+    }
+
+    .details {
+
+        span {
+            letter-spacing: 16px;
+        }
+
+        .we-are {
+            font-weight: $font-weight-light;
+            font-size: 40px;
+        }
+
+        .comming-soon {
+            font-size: 40px;
+            font-weight: $font-weight-bold;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            padding-left: 24px;
+
+            // &::placeholder {
+            //     padding-left: 20px;
+            // }
+        }
+
+        a {
+            padding: 8px 28px;
+            background-image: linear-gradient(to right, #f4b8b9, #ee9697);
+        }
+    }
+}
+
+// detail-wrapper-end
+
+// img-wrapper-start
+.desktop-img {
+    display: block;
+    height: 100%;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+.mobile-img {
+    display: none;
+    height: 280px;
+
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// img-wrapper--end
+#emailwrapper {
+    position: relative;
+    height: 40px;
+    width: 100%;
+
+    .errorbtn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        box-shadow: 0 10px 10px -4px $primary;
+    }
+
+}
+
+#emailId {
+    width: 76%;
+}
+
+.errorTrue {
+    position: absolute;
+    top: -2px;
+    bottom: 0;
+    right: -30px;
+    box-shadow: 0 10px 10px -4px $primary;
+}
+
+#erroricon {
+    margin: auto 50px auto 0;
+}
