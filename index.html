@@ -22,12 +22,16 @@
 </head>
 
 <body>
+  <!-- main-start-- -->
   <main class="h-100">
     <div class=" main-wrapper position-relative">
       <div class="row wrapper shadow overflow-hidden">
+        <!-- img-wrapper--start-- -->
         <div class="col-12 col-lg-5 h-100 img-wrapper px-0">
           <img src="assets/images/drawers.jpg" alt="drawer-img" class="drawer-img">
         </div>
+        <!-- img-wrapper--end -->
+        <!-- detail-wrapper-start-- -->
         <div class="col-12 col-lg-7 detail-wrapper d-flex flex-column justify-content-between p-0 p-lg-4">
           <p class="title text-dark mx-4 mx-lg-0 mt-4 mt-lg-0">
             Shift the overall look and feel by adding these wonderful
@@ -52,6 +56,7 @@
                 </p>
               </div>
             </div>
+            <!-- share-section-show-hide-on-mobile-view--- start---- -->
             <div class="d-none" id="media-wrapper">
               <p class="text-uppercase share-text mb-0">Share</p>
               <div class="d-flex ms-4">
@@ -75,6 +80,8 @@
                 </a>
               </div>
             </div>
+            <!-- share-section-show-hide-on-mobile-view--- end---- -->
+            <!-- share-button-- -->
             <div class="me-4">
               <a class="d-flex align-items-center justify-content-center icon-wrapper" onclick="openTooltip()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
@@ -87,7 +94,9 @@
 
           </div>
         </div>
+        <!-- detail-wrapper-end-- -->
       </div>
+      <!-- tooltip start--- -->
       <div class="share d-flex align-items-center py-2 px-4" id="share">
         <p class="text-uppercase share-text mb-0">Share</p>
         <div class="d-flex">
@@ -111,9 +120,13 @@
           </a>
         </div>
       </div>
+      <!-- tooltip--end--- -->
     </div>
   </main>
+  <!-- main-end-- -->
+  <!-- js-start-- -->
   <script src="assets/js/index.js"></script>
+  <!-- js-end-- -->
 </body>
 
 </html>

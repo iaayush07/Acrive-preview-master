@@ -14,6 +14,7 @@ function openTooltip(){
         profileWrapper.classList.toggle(['d-none']);
         mediaWrapper.classList.toggle(['d-none']);
         mediaWrapper.classList.toggle(['d-flex']);
+        mediaWrapper.classList.toggle(['align-items-center']);
     }else{
         if (share.style.visibility === "visible") {
             share.style.visibility = "hidden";
@@ -24,4 +25,4 @@ function openTooltip(){
     }
 }
 var media = window.matchMedia("(max-width: 768px)");
-media.addListener(openTooltip);
+media.addEventListener(openTooltip);

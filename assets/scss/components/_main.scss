@@ -1,8 +1,9 @@
 main {
-    background-color: #edf2f8;
+    background-color: $bg-primary;
     display: grid;
     place-items: center;
 
+    // main-wrapper-start
     .main-wrapper {
         width: 70%;
         padding: 50px;
@@ -23,7 +24,7 @@ main {
         .wrapper {
             height: 17rem;
             border-radius: 0.7rem;
-            background-color: #ffffff;
+            background-color: $white;
 
             @media (max-width:992px) {
                 height: 100%;
@@ -44,15 +45,16 @@ main {
 
             }
 
+            // --detail-wrapper-start
             .detail-wrapper {
                 .title {
-                    font-weight: 700;
+                    font-weight: $font-weight-bold;
                     font-size: 18px;
                 }
 
                 .detail {
                     font-size: 14px;
-                    font-weight: 500;
+                    font-weight: $font-weight-normal;
                 }
 
                 .profile-wrapper {
@@ -81,7 +83,7 @@ main {
                     justify-content: end;
                     height: 2rem;
                     width: 2rem;
-                    background-color: #edf2f8;
+                    background-color: $icon-background-color;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
@@ -90,13 +92,16 @@ main {
                 }
             }
 
+            // --detail-wrapper-end
+
         }
 
+        // share-btn-logic + design-- start---
         .share {
             visibility: hidden;
             position: absolute;
-            background-color: #49566a;
-            color: #ffffff;
+            background-color: $share-btn-bg-color;
+            color: $white;
             border-radius: 0.5rem;
             width: 200px;
             bottom: 130px;
@@ -125,5 +130,13 @@ main {
                 font-size: 14px;
             }
         }
+
+        // share-btn-logic + design-- end---
     }
+
+    // main-wrapper-end
+}
+
+#media-wrapper {
+    height: 50px;
 }
